@@ -12,19 +12,22 @@ make options:
     defaults to current directory
 
 make targets:
-    * `all`: builds static library and shell program
-    * `sqlite3.a`: just builds the static library
-    * `sqlite3`: just builds the shell program
-    * `install`: builds static library and shell program and installs them
-    * `clean`: deletes the build products
-    * `distclean`: cleans, and deletes the installed files
+* `all`: builds static library and shell program
+* `sqlite3.a`: just builds the static library
+* `sqlite3`: just builds the shell program
+* `install`: builds static library and shell program and installs them
+* `clean`: deletes the build products
+* `distclean`: cleans, and deletes the installed files
 
 You can do the typical:
-    ```
-    make install
-    ```
+
+```
+make install
+```
+
 or you can get more elaborate:
-    ```
-    make BUILD_DIR=build INSTALL_DIR=/usr/local/ sqlite3.a
-    ```
+
+```
+make BUILD_DIR=build INSTALL_DIR=/usr/local/ sqlite3.a
+```
 
